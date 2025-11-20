@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'com.lyfebegins.nu.thermal'
+    namespace 'com.codingdevs.thermal_printer'
     
     compileSdkVersion 33
 
