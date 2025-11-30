@@ -25,7 +25,11 @@ dependencies:
   rxdart: ^0.27.7
   gbk_codec: ^0.4.0
   hex: ^0.2.0
-  dart_ping: ^9.0.1
+  
+  dart_ping: 
+    git:
+      url: https://github.com/lyfebegins/dart_ping.git
+      path: dart_ping
 
 dev_dependencies:
   flutter_test:
