@@ -27,7 +27,7 @@ apply plugin: 'kotlin-android'
 android {
     namespace 'com.codingdevs.thermal_printer'
     
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
