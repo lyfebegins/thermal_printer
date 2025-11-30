@@ -50,6 +50,11 @@ class UsbPrinterConnector implements PrinterConnector<UsbPrinterInput> {
       : vendorId = '',
         productId = '',
         name = '' {
+    if (kIsWeb) {
+      print('USB printing is not supported on web.');
+      return;
+    }
+
     if (Platform.isAndroid)
       flutterPrinterEventChannelUSB.receiveBroadcastStream().listen((data) {
         if (data is int) {

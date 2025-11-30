@@ -28,6 +28,11 @@ class BluetoothPrinterDevice {
 class BluetoothPrinterConnector implements PrinterConnector<BluetoothPrinterInput> {
   // ignore: unused_element
   BluetoothPrinterConnector._({this.address = "", this.isBle = false}) {
+    if (kIsWeb) {
+      print('Bluetooth printing is not supported on web.');
+      return;
+    }
+
     if (Platform.isAndroid)
       flutterPrinterChannel.setMethodCallHandler((MethodCall call) {
         _methodStreamController.add(call);

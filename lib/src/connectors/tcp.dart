@@ -67,6 +67,11 @@ class TcpPrinterConnector implements PrinterConnector<TcpPrinterInput> {
   }
 
   static Future<String?> _getDeviceIp(String? ipAddress) async {
+    if (kIsWeb) {
+      print('IP printing is not supported on web.');
+      return;
+    }
+    
     if (Platform.isAndroid || Platform.isIOS) {
       return await NetworkInfo().getWifiIP();
     }
