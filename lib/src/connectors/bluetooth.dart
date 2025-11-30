@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:thermal_printer/discovery.dart';
 import 'package:thermal_printer/thermal_printer.dart';
 import 'package:rxdart/rxdart.dart';

@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'package:dart_ping/dart_ping.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:thermal_printer/src/models/printer_device.dart';
 import 'package:network_info_plus/network_info_plus.dart';
 import 'package:thermal_printer/discovery.dart';
